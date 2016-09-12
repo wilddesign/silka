@@ -1,0 +1,9 @@
+.row
+	.col-xs-2
+		h1 {{ $ctrl.data.female+$ctrl.data.male }} 
+	.col-xs-5
+		h1 {{ $ctrl.data.name|uppercase }}
+		sex-balance-indicator(female='$ctrl.data.female' male='$ctrl.data.male')
+	.col-xs-4
+		h5 DZIŚ 
+		h1 {{ $ctrl.data.time }}

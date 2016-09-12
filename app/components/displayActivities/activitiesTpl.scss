@@ -1,0 +1,37 @@
+/*.userActivities
+	.subscribed
+		h1 NAJBLIŻSZE
+		ul
+			li(ng-repeat="activity in $ctrl.userActivities" ng-if="activity.subscribed")
+				.col-md-4.col-md-offset-4
+					a
+						subsc-activity-details(data="activity")
+	.unsubscribed
+	
+		ul
+			li(ng-repeat="activity in $ctrl.userActivities" ng-if="!activity.subscribed")
+				.col-md-4.col-md-offset-4
+					a
+						unsub-activity-details(data="activity")
+*/					
+.userActivities{
+	a{color:inherit;}
+	a:hover{color:lightgrey;cursor:grab;
+		.row{background:$lighter-bck;}
+	}
+	.subscribed{
+	
+		margin-bottom:300px;
+		text-align:left;
+		h1{text-align:center;font-weight:200;}	
+			ul{
+
+			h1{text-align:left;vertical-align:text-bottom;}	
+					li{padding:20px;
+					
+						}
+			}
+		
+	}
+
+}
